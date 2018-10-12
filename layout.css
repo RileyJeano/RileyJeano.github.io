@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -10,7 +10,7 @@ img {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(6, 16%);
+  grid-template-rows: repeat(6, 1fr);
   margin: 2rem auto;
   width: 90%;
   background-color: yellow;
@@ -18,10 +18,11 @@ img {
 
 header {
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 0.5fr 0.25fr 5fr;
   background-color: pink;
 }
-.banner{
+
+.banner {
   display: flex;
   justify-content: center;
 }
@@ -29,80 +30,208 @@ header {
   background-color: red;
   max-width: 90px;
   min-height: 72px;
-  margin-top: .5%;
+  margin-top: 0.5%;
   margin-bottom: 1%;
- 
 }
 
-.banner_divide{
+.banner_divide {
   background-color: purple;
   max-height: 15px;
- 
 }
 .below_header {
   display: grid;
-  background-color: green;
   grid-template-columns: 7fr 3fr;
   max-height: 3rem;
 }
 
 .below_header--1 {
   display: flex;
-  background-color: red;
+
   margin: 1%;
 }
 
 .navigation {
   display: grid;
-  background-color: blue;
   grid-template-columns: repeat(5, 1fr);
   margin: 1%;
 }
 
-.navigation_item--1{
-  background-color: orange;
+.navigation_item--1 {
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 3px;
+  background-color: white;
 }
-.hero_image {
-  background-color: grey;
+
+.navigation_item--1:hover{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  transition-duration: .3s;
+}
+
+#hero-image {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 100%;
+  background-color: blue;
 }
-
 .page1 {
-  background-color: lightgrey;
   display: grid;
+  grid-template-rows: 0.08fr 1fr;
 }
 
-.page2 {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  background-color: blue;
-  display: grid;
-}
-.page3 {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  background-color: blue;
-  display: grid;
+.projects {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin: 10px;
+  padding: 3px;
 }
 
 .page1_grid_9 {
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(3, 30%);
-  max-width: 100%;
-  max-height: 100%;
   border: 0.2em solid #91a7ff;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: red;
 }
 
-.hero_image{
- display: grid;
- grid-column-start: 1;
- grid-column-end: 3;
- 
+.page2 {
+  background-color: pink;
+  display: grid;
+  grid-template-rows: 0.08fr 0.08fr 1fr;
 }
 
+.skill_header {
+  background-color: yellow;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin: 10px;
+  padding: 3px;
+}
+
+.skills_descriptions {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin: 10px;
+  padding: 3px;
+}
+
+.descriptions {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills_and_languages {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gird-gap: 2px;
+}
+.skills_grid_9 {
+  list-style: none;
+  display: grid;
+  border: 0.2em solid #91a7ff;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+.languages_grid_9 {
+  list-style: none;
+  display: grid;
+  border: 0.2em solid #91a7ff;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.page3 {
+  background-color: grey;
+  display: grid;
+  grid-template-rows: 0.08fr 1fr;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin: 10px;
+  padding: 3px;
+}
+.picture_and_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info {
+  margin: 10px;
+  padding: 3px;
+  background-color: yellow;
+}
+.picture {
+  margin: 10px;
+  padding: 3px;
+  background-color: red;
+}
+
+.page4{
+  display: grid;
+  grid-template-rows: .08fr 1fr;
+  background-color: green;
+
+}
+.resume_description{
+  background-color: pink;
+   display: flex;
+  justify-content: center;
+   margin: 10px;
+  padding: 3px;
+}
+.resume{
+   display: flex;
+  background-color: pink;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  padding: 3px;
+}
+.page5{
+  display: grid;
+  grid-template-rows: .08fr 1fr;
+  background-color: green;
+
+}
+.contact_description{
+  background-color: pink;
+   display: flex;
+  justify-content: center;
+   margin: 10px;
+  padding: 3px;
+}
+.contact{
+   display: flex;
+  background-color: pink;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  padding: 3px;
+}
