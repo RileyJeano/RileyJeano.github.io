@@ -13,8 +13,7 @@
 
 header {
   display: grid;
-  grid-template-columns: repeat(3,33,3%);
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 4fr 1fr 7fr;
   background-color: pink;
 }
 .banner{
@@ -38,7 +37,7 @@ header {
 .below_header {
   display: grid;
   background-color: green;
-  grid-template-columns: 62.5% 30%;
+  grid-template-columns: 7fr 3fr;
   max-height: 3rem;
 }
 
@@ -51,7 +50,7 @@ header {
 .navigation {
   display: grid;
   background-color: blue;
-  grid-template-columns: repeat(5, 25%);
+  grid-template-columns: repeat(5, 1fr);
   margin: 1%;
 }
 
@@ -60,6 +59,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 10px;
+  padding: 3px;
 }
 .hero_image {
   background-color: grey;
@@ -92,4 +92,9 @@ header {
   max-width: 100%;
   max-height: 100%;
   border: 0.2em solid #91a7ff;
+}
+
+.hero_image{
+  max-width: 100%;
+  max-height: 100%;
 }
