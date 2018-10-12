@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+#hero-image{
+  background-color: red;
+  width: 1600px; 
+  height: 1000px;
+}
