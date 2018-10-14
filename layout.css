@@ -2,48 +2,51 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 img {
   width: 100%;
 }
+
+a{
+   text-decoration: none;
+}
+
 .container {
-  margin: 2rem auto;
-  width: 90%;
+  display: grid;
+  grid-template-rows: .759fr .5fr .795fr .795fr .795fr;
 
+  
 }
-#hero-image{
-  height: 100%;
-  width: 100%;
-
-}
-.banner {
-  display: flex;
-  justify-content: center;
-}
-.header_item--1 {
-  max-width: 300px;
-  max-height: 300px;
-  margin-top: 0.5%;
-  margin-bottom: 1%;
+header{
+    display: grid;
+  grid-template-rows: .01fr 1fr;
 }
 
-.banner_divide {
-
-  max-height: 15px;
+ min-width: 644px ;
 }
 
 
 .navigation {
-  margin: 1%;
+  display: flex;
+  justify-content: center;
+
 }
 
+.navigation_side {
+  display: grid;
+  grid-template-columns: .8fr .8fr 1fr 1fr;
+  align-content: flex-end;
+  padding-right: 10px;
+  background-color: #F18583;
+
+}
 .navigation_item--1 {
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 3px;
-  background-color: white;
 }
 
 .navigation_item--1:hover{
@@ -51,66 +54,155 @@ img {
   justify-content: center;
   margin: 10px;
   padding: 3px;
-  background-color: black;
-  color: white;
-  transition-duration: .3s;
+  transition: .5s ease;
+}
+figure img{
+  max-height: 455px;
+}
+.hl {
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.page1 {
+  display: grid;
+  grid-template-rows: 0.08fr 1fr;
 }
 
-img {
-  width: 100%;
-}
-.container {
-  margin: 2rem auto;
-  width: 90%;
-
-}
-#hero-image{
-  height: 100%;
-  width: 100%;
-
-}
-.banner {
-  display: flex;
-  justify-content: center;
-}
-.header_item--1 {
-  max-width: 300px;
-  max-height: 300px;
-  margin-top: 0.5%;
-  margin-bottom: 1%;
-}
-
-.banner_divide {
-
-  max-height: 15px;
-}
-
-
-.navigation {
-  margin: 1%;
-}
-
-.navigation_item--1 {
+.projects {
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 3px;
-  background-color: white;
 }
 
-.navigation_item--1:hover{
+.page1_grid_9 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+li {
+  text-align: center;
+  margin: 5px;
+}
+
+.page1_grid_9_item--1 {
+    position: relative;
+ 
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page1_grid_9_item--1:hover .image {
+  opacity: 0.3;
+}
+
+.page1_grid_9_item--1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.page2 {
+  display: grid;
+  grid-template-rows: 0.08fr 0.08fr 1fr;
+}
+
+.skill_header {
+}
+.skills {
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 3px;
-  background-color: black;
-  color: white;
-  transition-duration: .3s;
 }
 
+.skills_descriptions {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 3px;
+}
+
+.descriptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills_and_languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+}
+.skills_grid_9 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: :500px;
+  grid-gap: 0.5rem;
+}
+.languages_grid_9 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.page3 {
+  display: grid;
+  grid-template-rows: 0.08fr 1fr;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 3px;
+}
+.picture_and_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info {
+  margin: 10px;
+  padding: 3px;
+}
+.picture {
+  margin: 10px;
+  padding: 3px;
+  max-width: 500px;
+  }
+
+  .hero_image{
+     background-image: url('C:/Users/WeCanCodeIT/wcci/code/RileyJeano.github.io/images/background7.png');
+      background-position: center;
+  background-repeat: no-repeat;
+  background-color: pink;
+  }
+
+
+
+  
