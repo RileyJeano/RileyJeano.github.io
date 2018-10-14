@@ -5,18 +5,32 @@
 
 }
 
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #181938;
+}
 img {
   width: 100%;
 }
 
 a{
    text-decoration: none;
+
+}
+
+.contact{
+color: #181938;
+}
+
+.contact:hover{
+    text-decoration: underline;
+    color: #F38584;
 }
 
 .container {
   display: grid;
-  grid-template-rows: .759fr .5fr .795fr .795fr .795fr;
-
+  grid-template-rows: .759fr .5fr .5fr .795fr;
   
 }
 header{
@@ -30,23 +44,23 @@ header{
 
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
 }
 
 .navigation_side {
   display: grid;
-  grid-template-columns: .8fr .8fr 1fr 1fr;
-  align-content: flex-end;
+  grid-template-columns: .1fr .1fr .1fr .1fr ;
   padding-right: 10px;
-  background-color: #F18583;
-
+  grid-gap: 3px;
+  justify-content: center;
 }
 .navigation_item--1 {
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 3px;
+ 
 }
 
 .navigation_item--1:hover{
@@ -55,25 +69,35 @@ header{
   margin: 10px;
   padding: 3px;
   transition: .5s ease;
+
 }
 figure img{
   max-height: 455px;
 }
-.hl {
-}
+
 
 .page1 {
   display: grid;
-  grid-template-rows: 0.08fr 1fr;
+  grid-template-rows: 0.08fr 0.008fr 1fr;
 }
 
 .projects {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
   padding: 3px;
+  font-weight: 300;
+   text-decoration: underline;
+
 }
 
+.projects_description {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+
+
+}
 .page1_grid_9 {
   list-style: none;
   display: grid;
@@ -122,6 +146,7 @@ li {
 .text {
   font-size: 16px;
   padding: 16px 32px;
+  font-weight: bold;
 }
 
 
@@ -130,13 +155,19 @@ li {
   grid-template-rows: 0.08fr 0.08fr 1fr;
 }
 
-.skill_header {
-}
+
 .skills {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
   padding: 3px;
+  font-weight: 300;
+   text-decoration: underline;
+}
+.skills_2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
 }
 
 .skills_descriptions {
@@ -144,10 +175,12 @@ li {
   justify-content: center;
   margin: 10px;
   padding: 3px;
+   font-weight: 200;
+   text-decoration: underline;
 }
 
 .descriptions {
-  display: grid;
+ display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .skills_and_languages {
@@ -159,7 +192,7 @@ li {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   height: :500px;
   grid-gap: 0.5rem;
 }
@@ -167,7 +200,7 @@ li {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 0.5rem;
 }
 
@@ -181,17 +214,34 @@ li {
   justify-content: center;
   margin: 10px;
   padding: 3px;
+   text-decoration: underline;
 }
 .picture_and_info {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.info {
-  margin: 10px;
-  padding: 3px;
+.info_intro {
+  font-size: 50px;
+  color: #181938;
+   font-weight: normal;
 }
+
+.who_i_am{
+
+font-size: 30px;
+}
+
+.info{
+
+font-size: 20px;
+}
+
+
 .picture {
-  margin: 10px;
+  margin-left: 80px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 3px;
   max-width: 500px;
   }
@@ -200,8 +250,28 @@ li {
   background-image: url('/images/background7.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
  
   }
 
+.page4 {
+  display: grid;
+  grid-template-rows: 0.08fr 0.08fr 1fr;
+}
 
+.passions{
+  display:flex;
+  justify-content: center;
+}
+
+.slideshows{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
 

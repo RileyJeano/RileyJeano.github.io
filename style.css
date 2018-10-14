@@ -11,12 +11,13 @@ color: #131737;
 
 .navigation_item--1 {
    border-radius: 25px;
-  color:#white;
+    color: #181938;
+   background-color: #F18583;
 }
 
 .navigation_item--1:hover{
 
-  background-color: #F2C047;
+  background-color: #C0EE6B;
 }
 
 
@@ -51,4 +52,8 @@ margin: 10px;
 .languages_grid_9 {
 margin: 10px;
 
+}
+
+h2{
+  font-weight: 200;
 }
