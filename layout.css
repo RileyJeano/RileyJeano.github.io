@@ -196,5 +196,12 @@ li {
   max-width: 500px;
   }
 
+  .hero_image{
+  background-image: url('/images/background7.png');
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  }
+
 
 
