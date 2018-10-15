@@ -1,59 +1,45 @@
-body{
-  background-color: #F8EDF1;
-
+body {
+  background-color: #f8edf1;
 }
 
-a:visited{
-color: #131737;
+a:visited {
+  color: #131737;
 }
-
-
 
 .navigation_item--1 {
-   border-radius: 25px;
-    color: #181938;
-   background-color: #F18583;
+  border-radius: 25px;
+  color: #181938;
+  background-color: #f18583;
 }
 
-.navigation_item--1:hover{
-
-  background-color: #C0EE6B;
+.navigation_item--1:hover {
+  background-color: #c0ee6b;
 }
-
-
-
 
 .page1 {
-
 }
 
 .projects {
-
 }
 
 .page1_grid_9 {
   margin: 10px;
 }
 li {
-
 }
 
 .text {
   background-color: white;
   color: 131737;
-
 }
 
 .skills_grid_9 {
-
-margin: 10px;
-
+  margin: 10px;
 }
 .languages_grid_9 {
-margin: 10px;
-
+  margin: 10px;
 }
 
-h2{
+h2 {
   font-weight: 200;
 }
