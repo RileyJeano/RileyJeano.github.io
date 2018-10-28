@@ -156,3 +156,28 @@ footer{
   padding: 3px;
   max-width: 500px;
   }
+
+
+
+  .collapsible {
+    background-color:#f18583;
+    color: #181938;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #AD605E;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
