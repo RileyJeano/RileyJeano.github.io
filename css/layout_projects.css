@@ -15,17 +15,17 @@ img {
 }
 
 a{
-   text-decoration: none;
+ text-decoration: none;
 
 }
 
 .contact{
-color: #181938;
+  color: #181938;
 }
 
 .contact:hover{
-    text-decoration: underline;
-    color: #F38584;
+  text-decoration: underline;
+  color: #F38584;
 }
 
 .container {
@@ -56,7 +56,7 @@ color: #181938;
   justify-content: center;
   margin: 10px;
   padding: 3px;
- 
+  
 }
 
 .navigation_item--1:hover{
@@ -76,8 +76,8 @@ color: #181938;
 
 }
 .info_picture{
-display: grid;
-grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 10px;
   padding: 3px;
 }
@@ -90,11 +90,11 @@ footer{
 
 
 .info_pictureitem--1 {
-    position: relative;
-    display: flex;
-    margin: 10px;
-    padding: 3px;
- 
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 3px;
+  
 }
 .info_picture {
   opacity: 1;
@@ -134,7 +134,7 @@ footer{
   justify-content: center;
   margin: 10px;
   padding: 3px;
-   text-decoration: underline;
+  text-decoration: underline;
 }
 .picture_and_info {
   display: grid;
@@ -143,8 +143,8 @@ footer{
 .info_intro {
   font-size: 25px;
   color: #181938;
-   font-weight: normal;
-    margin: 10px;
+  font-weight: normal;
+  margin: 10px;
   padding: 3px;
 }
 
@@ -155,29 +155,29 @@ footer{
   margin-bottom: 10px;
   padding: 3px;
   max-width: 500px;
-  }
+}
 
 
 
-  .collapsible {
-    background-color:#f18583;
-    color: #181938;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+.collapsible {
+  background-color:#f18583;
+  color: #181938;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
 .active, .collapsible:hover {
-    background-color: #AD605E;
+  background-color: #AD605E;
 }
 
 .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
