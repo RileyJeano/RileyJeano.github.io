@@ -1,4 +1,4 @@
-const {menueTurnOn, turnActive,addModal } = require('../js/dom.js')
+const {menueTurnOn, turnActive,addModal, addSlideshow } = require('../js/dom.js')
 
 describe ('menueTurnOn', () => {
 	test('should open nav', () =>{
@@ -73,3 +73,29 @@ describe ('addModal', () => {
 	
 })
 
+describe ('addSlideshow', () => {
+
+	const container = document.createElement('div')
+	container.classList.add('slideshow-container')
+	const prevButton = document.createElement('a')
+	prevButton.classList.add('prev')
+	const nextButton = document.createElement('a')
+	prevButton.classList.add('next')
+	const slide1 = document.createElement('div')
+	slide1.classList.add('mySlides')
+	const slide2 = document.createElement('div')
+	slide2.classList.add('mySlides')
+
+	addSlideshow([slide1, slide2], prevButton, nextButton)
+	test('should go forward', () =>{
+		nextButton.click()
+
+		expect(slide2.style.display).toBe('block')
+	})
+
+	test('should go backward', () =>{
+		prevButton.click()
+
+		expect(slide2.style.display).toBe('none')
+	})
+})
