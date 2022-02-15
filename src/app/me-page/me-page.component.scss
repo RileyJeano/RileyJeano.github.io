@@ -1,0 +1,54 @@
+.about-me-container{
+    padding-top: 1rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .2rem;
+    grid-gap: 20px;
+    text-align: center;
+  }
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+    background-color: #E6EBDA;
+    font-family: Quintessential;
+  }
+  h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+
+  
+#heroText{
+  align-items: stretch;
+  justify-content: center;
+
+}
+  #hero-image{
+    align-items: left;
+    height: 26.8rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 55% 55%;
+      padding: .2rem;
+      text-align: center;
+    }
+    #hero-image{
+      height: 10rem;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.15rem;
+    text-align: center;
+    grid-gap: 1rem;
+  }

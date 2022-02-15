@@ -1,0 +1,27 @@
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 15%;
+    padding-bottom: 0.5rem;
+}
+.containerLarge{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 1.15rem;
+    text-align: center;
+    grid-gap: 1rem;
+  }
+
+  @media screen and (max-width: 750px) {
+
+    #logo {
+      display: block;    
+      margin-right: auto;
+      width: 25%;
+   }
+  }
